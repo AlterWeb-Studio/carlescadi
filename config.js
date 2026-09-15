@@ -12,11 +12,11 @@ const CONFIG = {
     LOGO:           "logo/logoCAtrans.png", 
     LOGO_T:         "logo/logoCAtrans.png", 
     SLOGAN:         "Representant i distribuidor al Penedés de Cadí Alimentació",
-    TELEFON:        "",                 TELEFONLABEL: "Telèfon", TL: "📞",
+    TELEFON:        "",                 TELEFON_LABEL: "Telèfon", TELEFON_ICO: "📞",
     MOBIL:          "690 09 13 88",
     WHATSAPP:       "https://wa.me/34690091388",    WHATSAPPLABEL: "💬 Escríu-me per WhatsApp",
-    EMAIL:          "carlescadi@alterwebstudio.com",          EMAILLABEL: "e-Mail",   EM: "✉️",
-    ADRECA:         "Carrer del Empordà, 15-17, Nave J, 08219 Sant Quirze del Vallès, Barcelona",   ADRECALABEL: "Adreça", AD: "📍",
+    EMAIL:          "carlescadi@alterwebstudio.com",          EMAIL_LABEL: "e-Mail",   EMAIL_ICO: "✉️",
+    ADRECA:         "Carrer del Empordà, 15-17, Nave J, 08219 Sant Quirze del Vallès, Barcelona",   ADRECA_LABEL: "Adreça", ADRECA_ICO: "📍",
     INSTAGRAM:      "https://www.instagram.com/carlescadi",
     FACEBOOK:       "",
     EMAIL_SUPORT:   "info@alterwebstudio.com",
@@ -52,7 +52,7 @@ const CONFIG = {
     // 5. QUI SOM, SERVEIS
 
     QUI_SOM:        "Quiénes somos...",
-    QUE_FEM:        "Lo que hacemos",
+    QUE_FEMAIL_ICO:        "Lo que hacemos",
     QUE_FEM_SRV:    "Nuestros servicios",
 
     ASSIST_CARRETERA: [
