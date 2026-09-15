@@ -10,7 +10,7 @@ class NavComu extends HTMLElement {
         this.innerHTML = `
             <div class="franja-superior">
                 <a href="tel:${CONFIG.WHATSAPP}">Tel. ${CONFIG.MOBIL}</a>
-                <!--a href="mailto:${CONFIG.EMAIL}">${CONFIG.EM} ${CONFIG.EMAIL}</a-->
+                <!--a href="mailto:${CONFIG.EMAIL}">${CONFIG.EMAIL_ICO} ${CONFIG.EMAIL}</a-->
             </div>
             <nav class="navbar">
                 <div class="navbar-logo">
