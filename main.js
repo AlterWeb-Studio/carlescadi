@@ -9,6 +9,31 @@
 
     const inicialitzar = async () => {
 
+                // ─── LONG PRESS AL LOGO (1,5s → obre modal login) ────
+        // Funciona tant al mòbil (touch) com al PC (mouse)
+        // El truc: si passes 1500ms sense soltar → obrirModalLogin()
+        // Si soltes abans → clearTimeout cancel·la l'acció
+        const logo = document.querySelector('.navbar-logo img');
+        let timerLogo;
+
+        const iniciarPress = (e) => {
+            e.preventDefault();
+            // setTimeout → espera 1500ms i executa la funció
+            timerLogo = setTimeout(() => {
+                window.obrirModalLogin();
+            }, 1500);
+        };
+
+        // clearTimeout → cancel·la el setTimeout si soltes abans d'1,5s
+        const aturarPress = () => clearTimeout(timerLogo);
+
+        logo.addEventListener('mousedown',   iniciarPress);           // PC: prem botó ratolí
+        logo.addEventListener('mouseup',     aturarPress);            // PC: solta botó ratolí
+        logo.addEventListener('mouseleave',  aturarPress);            // PC: el ratolí surt del logo
+        logo.addEventListener('touchstart',  iniciarPress, { passive: false }); // Mòbil: toca
+        logo.addEventListener('touchend',    aturarPress);            // Mòbil: aixeca el dit
+        logo.addEventListener('contextmenu', (e) => e.preventDefault()); // Evita menú contextual al logo
+
         /* ── HERO ──────────────────────────────────────────── */
         const hero = document.getElementById('hero');
         if (hero) {
